@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:neon_man/features/presentation/pages/home/home_page.dart';
 import 'package:neon_man/shared/theme/data_theme.dart';
 
 class App extends StatelessWidget {
@@ -13,15 +14,7 @@ class App extends StatelessWidget {
       theme: DataTheme.lightTheme,
       darkTheme: DataTheme.darkTheme,
       themeMode: ThemeMode.dark,
-      home: Scaffold(
-        appBar: AppBar(),
-        backgroundColor: Theme.of(context).colorScheme.background,
-        body: const SafeArea(
-          child: Column(
-            children: [],
-          ),
-        ),
-      ),
+      home: const HomePage(),
     );
   }
 }
